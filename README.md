@@ -32,3 +32,7 @@ python inpaint.py --input example.png --mask example_mask.png
 how to use`torch` and `lua`
 
 [pyTorch](https://pytorch.org/docs/master/index.html) : how to implement torch model by pyTorch
+
+## Future Work
+
+Using [Python captcha.image.ImageCaptcha() Examples](https://www.programcreek.com/python/example/98386/captcha.image.ImageCaptcha) to train 1k pictures.
