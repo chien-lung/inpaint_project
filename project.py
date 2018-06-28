@@ -57,8 +57,4 @@ model=nn.Sequential(
 
 model.load_state_dict(torch.load('completionnet_places2.pth'))
 
-#print(Inpaint)
-#b=list(Inpaint.parameters())
-#print(Inpaint.state_dict())
-
 torch.save(model, "inpaint.pkl")
