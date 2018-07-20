@@ -12,7 +12,7 @@ Using pytorch to implement [Globally and Locally Consistent Image Completion](ht
 
 Using [`convert_torch.py`](https://github.com/clcarwin/convert_torch_to_pytorch) to convert torch model(.t7) to pytorch model(.py, .pth)
 
-`convert_model.py` : load the params from `completionnet_places2.pth` and save whole network in `inpaint.pkl`
+[`save_network.py`](https://github.com/chien-lung/inpaint_project/blob/master/save_network.py) : load the params from `completionnet_places2.pth` and save whole network in `inpaint.pkl`
 
 ## Usage
 
