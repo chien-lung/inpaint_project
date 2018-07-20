@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.serialization import load_lua
-from collections import OrderedDict
+#from collections import OrderedDict
 model=nn.Sequential(
 	nn.Conv2d(4,64,(5,5),stride=(1,1),padding=(2,2)),
 	nn.BatchNorm2d(64),
