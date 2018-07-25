@@ -4,13 +4,11 @@
 
 Using pytorch to implement [Globally and Locally Consistent Image Completion](http://hi.cs.waseda.ac.jp/~iizuka/projects/completion/en/)
 
-`completionnet_places2.t7`  : torch(lua) model
+Using [`convert_torch.py`](https://github.com/clcarwin/convert_torch_to_pytorch) to convert torch model(`.t7`) to pytorch model(`.py`,` .pth`):
 
-`completionnet_places2.py`  : pytorch model
+  `completionnet_places2.t7`  : torch(lua) model 
 
-`completionnet_places2.pth` : pytorch model's parameters
-
-Using [`convert_torch.py`](https://github.com/clcarwin/convert_torch_to_pytorch) to convert torch model(.t7) to pytorch model(.py, .pth)
+  -> [`completionnet_places2.py`  : pytorch model , `completionnet_places2.pth` : pytorch model's parameters]
 
 [`save_network.py`](https://github.com/chien-lung/inpaint_project/blob/master/save_network.py) : load the params from `completionnet_places2.pth` and save whole network in `inpaint.pkl`
 
