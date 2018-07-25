@@ -1,7 +1,8 @@
 import torch
 import torch.nn as nn
 from torch.utils.serialization import load_lua
-#from collections import OrderedDict
+
+#create completion network
 model=nn.Sequential(
 	nn.Conv2d(4,64,(5,5),stride=(1,1),padding=(2,2)),
 	nn.BatchNorm2d(64),
@@ -55,6 +56,8 @@ model=nn.Sequential(
 	nn.Sigmoid()
 )
 
+#load parameters from pytorch file
 model.load_state_dict(torch.load('completionnet_places2.pth'))
 
+#save whole network (including parameters)
 torch.save(model, "inpaint.pkl")
